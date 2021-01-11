@@ -28,22 +28,15 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/books")
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 @Api("Book API")
 @Slf4j // faz com a compilação da classe receba um objeto de log
 public class BookController
 {
 
-    private BookService service;
-    private LoanService loanService;
-    private ModelMapper modelMapper;
-
-    public BookController(BookService service, LoanService lService, ModelMapper modelMapper)
-    {
-        this.service = service;
-        this.loanService = lService;
-        this.modelMapper = modelMapper;
-    }
+    private final BookService service;
+    private final LoanService loanService;
+    private final ModelMapper modelMapper;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

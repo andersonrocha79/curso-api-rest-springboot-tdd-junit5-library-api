@@ -45,10 +45,10 @@ public class BookControllerTest
     MockMvc mvc;
 
     @MockBean
-    BookService service;
+    private BookService service;
 
     @MockBean
-    LoanService loanService;
+    private LoanService loanService;
 
     @Test
     @DisplayName("Deve criar um livro com sucesso.")
