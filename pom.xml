@@ -19,10 +19,10 @@
 
 	<groupId>br.com.rochasoft</groupId>
 	<artifactId>library-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>library-api</name>
 	<packaging>jar</packaging>
-	<description>api do projeto de bibliotecas</description>
+	<description>Api do projeto de bibliotecas curso UDEMY 2.0</description>
 
 	<properties>
 		<java.version>1.8</java.version>
