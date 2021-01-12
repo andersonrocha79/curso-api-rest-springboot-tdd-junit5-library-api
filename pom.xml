@@ -21,7 +21,8 @@
 	<artifactId>library-api</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>library-api</name>
-	<packaging>jar</packaging>
+	<!-- <packaging>jar</packaging> -->
+	<packaging>war</packaging>
 	<description>Api do projeto de bibliotecas curso UDEMY 2.0</description>
 
 	<properties>
@@ -32,6 +33,17 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- por padrão a aplicação springboot já vem com o tomcat embutido
+		     quando gerar "war" tem que incluir esta dependencia "spring-boot-starter-tomcat"
+		     e a classe principal precisa extender de SpringBootServletInitializer:
+		     public class LibraryApiApplication extends SpringBootServletInitializer-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
